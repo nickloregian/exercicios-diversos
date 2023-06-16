@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <script src="js/myScript.js"></script>
+</head>
+<body>
+    <h2>O que o JavaScript pode fazer</h2>
+
+<p id="subtitulo">O JavaScript pode modificar elementos HTML. Como podem ser feitas essas modificações?</p>
+
+<p id="detalhes"></p>
+
+
+<ul>
+    <ol>
+        <li> Pode realizar alterações no conteúdo HTML</li>
+        <li> Pode realizar alterações nos atributos do elemento HTML</li>
+        <li> Pode realizar alterações nos estilos do elemento HTML</li>
+        <li> Pode esconder ou mostrar o elemento HTML</li>
+        <li> Pode criar ou excluir o elemento HTML</li>
+    </ol>
+</ul>
+
+<button type="button" onclick='document.getElementById("detalhes").innerHTML = "JavaScript é uma das linguagens de programação mais populares do mundo, ela é a linguagem de programação para Web, sendo facil de aprender, e podendo ser usada para programar em FrontEnd e em BackEnd."'>Inserir detalhes sobre JavaScript</button>
+<br>
+<br>
+<button type="button" onClick= 'document.getElementById("subtitulo").style.fontSize= "20px"'>Alterar estilo do texto</button>
+<br>
+<br> 
+<button type="button" onclick="document.getElementById ('detalhes').style.display ='none'">Esconder texto</button>
+<br>
+<br>
+<button type="button" onclick="document.getElementById('detalhes').style.display = 'block'">Mostrar texto</button>
+<button type="button" onclick="document.getElementById('detalhes').style.display = mostrarEsconder(getElementById('detalhes').style.display)"> Mostrar/esconder </button>
+<br>
+<br>
+<img id='lampada'src="imagens/Lampada-apagada.jfif" alt="Lampada-apagada">
+<br>
+<button type="button" onclick="document.getElementById('lampada').src=acenderlampada(getElementById('lampada').getAttribute('src'))">Acender/Apagar</button>
+
+
+</body>
+</html>
